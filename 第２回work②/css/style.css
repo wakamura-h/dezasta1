@@ -16,42 +16,42 @@ li {
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
-.wrap {
+div {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.wrap ul {
+ul {
     display: flex;
     list-style: none;
     padding: 20px 30px;
 }
 
-.wrap li {
+li {
     padding: 10px 30px;
 }
 
-.wrap li+li{
+li+li{
   border-left: 1px solid black;
 }
 
 
 @media screen and (max-width:767px) {
-.wrap{
+div{
   display: block;
 }
 
-.wrap ul{
+ul{
   display: block;
 }
 
-.wrap li+li{
+li+li{
   border-left: none;
 }
 
-.wrap li{
+li{
   border-bottom: 1px solid black;
 }
 
