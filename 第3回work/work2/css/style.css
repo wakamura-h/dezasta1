@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* cssリセット */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/*背景*/
+body{
+    background-color: #eeee;
+}
+/*見出し２文字『サービス』*/
+h2{
+    color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px
+}
+/*サービス１〜３*/
+.service_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.service_section{
+background: white;
+}
+
+.service_section h3{
+    color: cadetblue;
+    font-size: 20px;
+    border-left: 5px solid cadetblue;
+    margin:  10px 0;
+}
+
+@media screen and (max-width:400px){
+
+h2{
+    font-size: 40px;
+}
+.service_wrap{
+display: block;
+width: 100%;
+}
+
+.service_section h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.service_section img{
+    width: 100%;
+}
+.service_section{
+    margin-bottom: 20px;
+}
+
+
+}
