@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+h4
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", 'YuMincho', "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+    background-color: #E8D9BF;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す アクションんは0.3秒で動く*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+/*ボタンにマウスを置くとちょっと変化する 今回は半透明になる変化*/
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+
+/*ヘッダー*/
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 6.57% 0px 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 226px;
+    background-color: transparent;
+}
+
+.pc_nav ul{
+    display: flex;
+    background-color: transparent;
+}
+.pc_nav li{
+    font-size:  18px;
+    line-height: 1.222;
+    color: white;
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    text-align: center;
+    width: 104px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.pc_nav li:last-child{
+    margin-right: 0;
+}
+
+.pc_nav a {
+    display: block;
+}
+.slider img{
+    width: 100%;
+}
+
+.slider{
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*メイン*/
+.main_top{
+    text-align: center;
+    margin: 0 auto;
+    font-family: "游明朝体","YuMincho","Yu Mincho","YuMincho Medium","Yu MinchoMedium",serif;
+}
+
+.main_top h2 {
+    font-size: 30px;
+    padding: 108px 0 65px;
+}
+
+.main_top h3 {
+    font-size: 82px;
+    line-height: 96px;
+}
+
+.main_top h4 {
+    font-size: 23px;
+    line-height: 38px;
+    padding: 45.5px 0 94.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+/*ABOUT US*/
+.about_us_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#about_us img {
+    width: 500%;
+    border-bottom-right-radius: 40px;
+}
+
+.about_us img {
+    width: 272px;
+
+}
+.about_us{
+    width: 410px;
+}
+
+.about_us h2{
+    font-size: 44px;
+    line-height: 61px;
+}
+
+/*MENU*/
+.menu_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#menu img {
+    width: 151px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu img {
+    width: 300px;
+    border-top-right-radius: 40px;
+}
+
+.menu_content {
+    width: 300px;
+}
