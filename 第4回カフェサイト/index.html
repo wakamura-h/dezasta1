@@ -12,16 +12,16 @@
 
 <body>
     <!--ヘッダー-->
-    <header>
+    <header id="header">
         <div class="header_wrap">
             <h1 class="logo"><img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェ"> </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about_us_section">ABOUT US</a></li>
+                    <li><a href="#menu_section">MENU</a></li>
+                    <li><a href="#gallery_section">GALLERY</a></li>
+                    <li><a href="#event_section">EVENT</a></li>
+                    <li><a href="#access_section">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,21 +34,23 @@
     <!--メイン文章-->
     <main>
         <div class="main_top">
-            <h2>Have a happy day From a cup of coffee.</h2>
-            <h3>ハッピーに溢れる1日を<br>
-                1杯のコーヒーから。</h3>
-            <h4>毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</h4>
+            <p class="top_p1">Have a happy day From a cup of coffee.</p>
+            <h2>ハッピーに溢れる1日を<br>
+                1杯のコーヒーから。</h2>
+            <p class="top_p2">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
 
         <!--ABOUT US-->
-        <section class="about_us_section">
+        <section id="about_us_section">
             <h2 class="about_us_img">
                 <img src="images/pc_about-100.jpg" alt="ABOUT_US_img">
             </h2>
             <div class="about_us">
-                <img src="images/about_us@2x.png" alt="ABOUT_US">
-                <h2>私たちが提供する<br>こだわりのコーヒー</h2>
+                <h2 class="about_uscontents">
+                    <img src="images/about_us@2x.png" alt="ABOUT_US">
+                </h2>
+                <h3>私たちが提供する<br>こだわりのコーヒー</h3>
                 <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、
                     メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想い
                     や心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
@@ -56,7 +58,7 @@
         </section>
 
         <!--MENU-->
-        <section class="menu_section">
+        <section id="menu_section">
             <!--MENU 文字画像-->
             <h2 class="menu_img">
                 <img src="images/menu@2x.png" alt="menu">
@@ -66,21 +68,21 @@
                 <div class="menu">
                     <img src="images/pc_menu_drink-100.jpg" alt="drink">
                     <div class="menu_content">
-                        <h2>Drink</h2>
+                        <h3>Drink</h3>
                         <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
                 </div>
                 <div class="menu">
                     <img src="images/pc_menu_food-100.jpg" alt="food">
                     <div class="menu_content">
-                        <h2>Food</h2>
+                        <h3>Food</h3>
                         <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
                 </div>
                 <div class="menu">
                     <img src="images/pc_menu_sweets-100.jpg" alt="sweets">
                     <div class="menu_content">
-                        <h2>Sweets</h2>
+                        <h3>Sweets</h3>
                         <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
                 </div>
@@ -88,7 +90,7 @@
         </section>
 
         <!--GALLERY-->
-        <section class="gallery_section">
+        <section id="gallery_section">
             <h2 class="gallery_img">
                 <img src="images/gallery@2x.png" alt="gallery">
             </h2>
@@ -102,11 +104,11 @@
         </section>
 
         <!--EVENT-->
-        <section class="event_section">
+        <section id="event_section">
             <h2 class="event_img">
                 <img src="images/event@2x.png" alt="event">
             </h2>
-            <dl>
+            <dl class="eventbox">
                 <dt>2020.02.06</dt>
                 <dd><a href="#">コーヒーの日で30%OFFイベントを開催[3日間限定]</a></dd>
                 <dt>2020.03.15</dt>
@@ -117,7 +119,7 @@
         </section>
 
         <!--ACCESS-->
-        <section class="access_section">
+        <section id="access_section">
             <h2 class="access_img">
                 <img src="images/access@2x.png" alt="access">
             </h2>
