@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cafe サイト</title>
     <meta name="description" content="カフェメニュー">
+    <!--topのspボタン jQuery-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--galleryスライダー jQuery-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -24,10 +31,25 @@
                     <li><a href="#access_section">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn open"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about_us_section">ABOUT US</a></li>
+                    <li><a href="#menu_section">MENU</a></li>
+                    <li><a href="#gallery_section">GALLERY</a></li>
+                    <li><a href="#event_section">EVENT</a></li>
+                    <li><a href="#access_section">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
         <!--ヘッダー写真-->
         <ul class="slider">
-            <li><img src="images/pc_first-100.jpg" alt="店内の様子"></li>
+            <li>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </li>
         </ul>
     </header>
 
@@ -39,9 +61,13 @@
                 1杯のコーヒーから。</h2>
             <p class="top_p2">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <p class="top_p2_sp">毎日を丁寧に大切に過ごしたい。<br>だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間と<br>こだわりのコーヒーを提供したい。
+            </p>
         </div>
 
         <!--ABOUT US-->
+        <!--pc用-->
         <section id="about_us_section">
             <h2 class="about_us_img">
                 <img src="images/pc_about-100.jpg" alt="ABOUT_US_img">
@@ -55,6 +81,17 @@
                     メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想い
                     や心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
             </div>
+        </section>
+        <!--sp用-->
+        <section id="aboutus_sp">
+            <h2 class="about_us">
+                <img src="images/about_us@2x.png" alt="ABOUT_US">
+            </h2>
+            <img src="images/about_us@2x-100.jpg" alt="about_us_img">
+            <h3>私たちが提供する<br>こだわりのコーヒー</h3>
+            <p>サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、
+                メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想い
+                や心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
         </section>
 
         <!--MENU-->
@@ -95,27 +132,36 @@
                 <img src="images/gallery@2x.png" alt="gallery">
             </h2>
             <div class="gallery_wrap">
-                <div><img src="images/pc_gallary_05-100.jpg" alt="gallery1"></div>
-                <div><img src="images/pc_gallary_04-100.jpg" alt="gallery2"></div>
-                <div><img src="images/pc_gallary_03-100.jpg" alt="gallery3"></div>
-                <div><img src="images/pc_gallary_02-100.jpg" alt="gallery4"></div>
-                <div><img src="images/pc_gallary_01-100.jpg" alt="gallery4"></div>
+                <div class="gallery_slider"><img src="images/pc_gallary_05-100.jpg" alt="gallery1"></div>
+                <div class="gallery_slider"><img src="images/pc_gallary_04-100.jpg" alt="gallery2"></div>
+                <div class="gallery_slider"><img src="images/pc_gallary_03-100.jpg" alt="gallery3"></div>
+                <div class="gallery_slider"><img src="images/pc_gallary_02-100.jpg" alt="gallery4"></div>
+                <div class="gallery_slider"><img src="images/pc_gallary_01-100.jpg" alt="gallery4"></div>
             </div>
         </section>
+
 
         <!--EVENT-->
         <section id="event_section">
             <h2 class="event_img">
                 <img src="images/event@2x.png" alt="event">
             </h2>
-            <dl class="eventbox">
-                <dt>2020.02.06</dt>
-                <dd><a href="#">コーヒーの日で30%OFFイベントを開催[3日間限定]</a></dd>
-                <dt>2020.03.15</dt>
-                <dd><a href="#">春の新商品新発売。話題のあのブランドとコラボ</a></dd>
-                <dt>2020.06.23</dt>
-                <dd><a href="#">7月はイベント出店のため0/0お休みします</a></dd>
-            </dl>
+            <div class="eventbox">
+                <ul>
+                    <li>
+                        <div class="day">2020.06.23</div>
+                        <div class="text"><a href="#">7月はイベント出店のため0/0お休みします</a></div>
+                    </li>
+                    <li>
+                        <div class="day">2020.03.15</div>
+                        <div class="text"><a href="#">春の新商品新発売。話題のあのブランドとコラボ</a></div>
+                    </li>
+                    <li>
+                        <div class="day">2020.02.06</div>
+                        <div class="text"><a href="#">コーヒーの日で30%OFFイベントを開催[3日間限定]</a></div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--ACCESS-->
@@ -152,6 +198,43 @@
 
     </main>
 
+    <script>
+
+        $(function () {
+            $('.sp_btn').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+
+        $(function () {
+            $(".gallery_wrap").slick({
+                arrows: true,//左右の矢印
+                autoplay: true,//自動再生
+                autoplaySpeed: 2000,//自動再生の速度
+                centerMode: true,//前後の写真が少し見える
+                centerPadding: "30px",//センターモードで写真の見える範囲
+                dots: false,//ページ送りのドット
+                slidesToShow: 4,//スライダーに表示する数
+                speed: 400,//スライダーの速度
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            arrows: true,
+                            centerMode: false,
+                            slidesToShow: 1,
+                            infinite: true,//無限にスライドする
+                        }
+                    },
+
+                ]
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
