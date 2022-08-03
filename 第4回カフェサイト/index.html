@@ -7,14 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cafe サイト</title>
     <meta name="description" content="カフェメニュー">
-    <!--topのspボタン jQuery-->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!--galleryスライダー jQuery-->
+
+    <!--jquer link-->
+    <!--lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+    <!--slick jQuery-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--style css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--jQueryスクリプト-->
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--lightbox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!--slick-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -31,10 +46,10 @@
                     <li><a href="#access_section">ACCESS</a></li>
                 </ul>
             </nav>
-            <div class="sp_btn open"><span></span></div>
+            <div class="sp_btn"><span></span></div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#about_us_section">ABOUT US</a></li>
+                    <li><a href="#aboutus_sp">ABOUT US</a></li>
                     <li><a href="#menu_section">MENU</a></li>
                     <li><a href="#gallery_section">GALLERY</a></li>
                     <li><a href="#event_section">EVENT</a></li>
@@ -48,6 +63,12 @@
                 <picture>
                     <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
                     <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/slider_2.jpg" alt="店内の様子">
                 </picture>
             </li>
         </ul>
@@ -132,12 +153,58 @@
                 <img src="images/gallery@2x.png" alt="gallery">
             </h2>
             <div class="gallery_wrap">
-                <div class="gallery_slider"><img src="images/pc_gallary_05-100.jpg" alt="gallery1"></div>
-                <div class="gallery_slider"><img src="images/pc_gallary_04-100.jpg" alt="gallery2"></div>
-                <div class="gallery_slider"><img src="images/pc_gallary_03-100.jpg" alt="gallery3"></div>
-                <div class="gallery_slider"><img src="images/pc_gallary_02-100.jpg" alt="gallery4"></div>
-                <div class="gallery_slider"><img src="images/pc_gallary_01-100.jpg" alt="gallery4"></div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="group" data-title="No.1">
+                        <img src="images/pc_gallary_01-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_02-100.jpg" data-lightbox="group" data-title="No.2">
+                        <img src="images/pc_gallary_02-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_03-100.jpg" data-lightbox="group" data-title="No.3">
+                        <img src="images/pc_gallary_03-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="group" data-title="No.4">
+                        <img src="images/pc_gallary_04-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_05-100.jpg" data-lightbox="group" data-title="No.5">
+                        <img src="images/pc_gallary_05-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="group" data-title="No.6">
+                        <img src="images/pc_gallary_01-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_02-100.jpg" data-lightbox="group" data-title="No.7">
+                        <img src="images/pc_gallary_02-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_03-100.jpg" data-lightbox="group" data-title="No.7">
+                        <img src="images/pc_gallary_03-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="group" data-title="No.9">
+                        <img src="images/pc_gallary_04-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
+                <div class="gallery_slider">
+                    <a href="images/pc_gallary_05-100.jpg" data-lightbox="group" data-title="No.10">
+                        <img src="images/pc_gallary_05-100.jpg" alt="店内の様子">
+                    </a>
+                </div>
             </div>
+
         </section>
 
 
@@ -201,22 +268,31 @@
     <script>
 
         $(function () {
-            $('.sp_btn').click(function () {
+            $('.sp_btn,.sp_nav li').click(function () {
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open');
             });
         });
 
         $(function () {
+            $('.slider').slick({
+                autoplay: true,
+                arrows: false,
+                dots: true,
+                speed: 2000,
+            });
+        });
+
+
+        $(function () {
             $(".gallery_wrap").slick({
+                infinite: true,
                 arrows: true,//左右の矢印
                 autoplay: true,//自動再生
                 autoplaySpeed: 2000,//自動再生の速度
-                centerMode: true,//前後の写真が少し見える
-                centerPadding: "30px",//センターモードで写真の見える範囲
                 dots: false,//ページ送りのドット
-                slidesToShow: 4,//スライダーに表示する数
-                speed: 400,//スライダーの速度
+                slidesToShow: 5,//スライダーに表示する数
+                speed: 200,//スライダーの速度
                 responsive: [
                     {
                         breakpoint: 767,
@@ -232,9 +308,7 @@
             });
         });
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-    </script>
-    <script src="js/main.js"></script>
+
 </body>
 
 </html>

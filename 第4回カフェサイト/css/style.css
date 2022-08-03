@@ -67,6 +67,7 @@ body{
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .logo{
@@ -101,6 +102,17 @@ body{
 }
 .slider img{
     width: 100%;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #fff;
+}
+.slick-dots li button:before{
+    color: #fff;
 }
 
 /*メイン*/
@@ -205,10 +217,13 @@ body{
     margin: 0 auto;
 }
 
-.menu{
-    width: 30%;
+.menu img{
+    max-width: 1000px;
 }
 
+.menu_content{
+    width: 300px;
+}
 .menu_wrap h3 {
     font-size: 38px;
     font-weight: normal;
@@ -219,11 +234,11 @@ body{
 .menu_wrap p{
     font-size: 17px;
     line-height: 1.47;
+    
 }
 
 /*GALLERY*/
-
-#gallery_section {
+#gallery_section{
     margin-top: 100px;
 }
 
@@ -235,15 +250,27 @@ body{
 }
 
 .gallery_wrap {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.gallery_slider img{
+.gallery_wrap img{
     width: 100%;
     height: auto;
 }
 
+.lb-number{
+    display: none;
+}
+
+.slick-prev {
+    left: 300px;
+    z-index: 100;
+}
+
+.slick-next {
+    right: 300px;
+}
 
 /*EVENT*/
 
@@ -373,14 +400,12 @@ footer {
     .pc_nav{
         display: none;
     }
-    .sp_nav{
-        display: block;
-    }
+
     .sp_btn{
         display: block;
         position: absolute;
         right: 20px;
-        top: 10px;
+        top:  15px;
         height: 30px;
         z-index: 100;
     }
@@ -407,10 +432,10 @@ footer {
     }
 
 .sp_btn span::before{
-    bottom: 10px;
+    bottom: 12px;
 } 
 .sp_btn span::after{
-    top: 10px;
+    top: 12px;
 }
 
 /*openした時*/
@@ -508,6 +533,7 @@ footer {
 
 .top_p2_sp{
     display: block;
+    line-height: 1.75;
 }
 
 
@@ -537,7 +563,6 @@ footer {
     font-size: 16px;
     line-height: 1.75;
     font-weight: normal;
-    text-align: center;
     padding: 0 20px;
 }
 
@@ -550,6 +575,7 @@ footer {
 
 #menu_section{
     margin-top: 56px;
+    padding: 0 35px;
 }
 
 .menu_img{
@@ -559,12 +585,16 @@ footer {
 
 
 .menu_wrap {
+    width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0 37px;
 }
 
-.menu{
+.menu img{
+    width: 100%;
+}
+
+.menu_content{
     width: 100%;
 }
 
@@ -580,9 +610,26 @@ footer {
 }
 
 /*gallery sp用*/
+#gallery_section{
+    margin-top: 35px;
+}
 
-.gallery_wrap{
-    max-width: 80%;
+.gallery_img {
+    width: 142px;
+    padding-bottom: 26px;
+}
+
+.gallery_wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
 }
 
 /*EVENT sp用*/
@@ -599,7 +646,6 @@ footer {
 }
 
 .eventbox {
-    width: 335px;
     margin: 0 auto;
     padding: 23px 28px;
 }
@@ -665,6 +711,7 @@ footer {
 
 .toTOP {
     width: 100px;
+    
 }
 
 
