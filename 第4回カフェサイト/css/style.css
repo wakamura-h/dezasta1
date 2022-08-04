@@ -260,16 +260,63 @@ body{
 }
 
 .lb-data .lb-number {
-    display: none !important;
+    display: none !important;/*lightboxのページ文字を消す*/
 }
 
-.slick-prev {
-    left: 300px;
+
+/*slick 矢印のデザイン変更*/
+.slick-arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 19px;
+    height: 38px;
+    color: transparent;
+    z-index: 100;
+    transition: opacty 0.5s;
     z-index: 100;
 }
+.slick-arrow:hover {
+    opacity: 0.8;
+}
 
+/* 共通設定 */
+
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+}
+.slick-next::after,
+.slick-prev::after {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+/* next */
 .slick-next {
-    right: 300px;
+    right: 320px;
+}
+.slick-next::after {
+    transform: rotate(45deg);
+}
+
+/* prev */
+.slick-prev {
+    left: 300px;
+}
+.slick-prev::after {
+    transform: rotate(-135deg);
 }
 
 /*EVENT*/
@@ -629,7 +676,7 @@ footer {
 }
 
 .slick-next {
-    right: 10px;
+    right: 35px;
 }
 
 /*EVENT sp用*/
